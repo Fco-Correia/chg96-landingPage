@@ -254,6 +254,12 @@ label {
     form {
         width: 100%;
     }
+    
+    label {
+        position: absolute;
+        right: 40px;
+        top: 35px;
+    }
 
 }
 
