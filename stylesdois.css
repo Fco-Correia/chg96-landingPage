@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+body {
+    background-color: rgb(0, 0, 61);
+}
+
+label {
+    position: absolute;
+    right: 100px;
+    top: 35px;
+}
+#check {
+    display: none;
+}
+header {
+    background-color: rgb(0, 0, 26);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    width: 100%;
+    
+}
+
+.list-menu {
+    display: flex;
+}
+
+.logo {
+    font-size: 35px;
+    color: white;
+}
+
+li {
+    padding: 0px 15px;
+}
+li a {
+    font-size: 18px;
+    color: white;
+    padding: 5px 10px;
+}
+
+.header-content li a:hover {
+    background-color: brown;
+    border-radius: 80px;
+    transition: 200ms ease-in-out;
+}
+
+.section-content {
+    display: flex;
+    margin-top: 190px;
+    padding: 0px 100px;
+    gap: 50px;
+}
+.heigth {
+    min-height: 100vh;
+    width: 100%;
+}
+aside {
+    width: 50%;
+}
+
+form {
+    width: 50%;
+}
+
+.media-icons {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.media-icons a:hover {
+    transform: scale(1.5);
+    transition: 300ms;
+}
+
+.section-content aside h1 {
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.section-content aside p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-align:unset;
+}
+
+.section-content .info-btn {
+    display: block;
+    width: 130px;
+    font-weight: 900;
+    color: white;
+    background-color: brown;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.section-content .info-btn:hover {
+    background-color: rgba(165, 42, 42, 0.603);
+    transition: 200ms ease-in-out;
+}
+
+form {
+
+    max-height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    border-radius: 20px;
+    padding: 40px;
+    padding-bottom: 1px;
+    color: white;
+}
+
+input {
+    border-style: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    margin-top: 30px;
+    color: black;
+    font-size: 16px;
+}
+
+#login-btn {
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    width: auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: brown;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#login-btn:hover {
+    background-color: rgba(165, 42, 42, 0.603);
+    transition: 200ms ease-in-out;
+}
+
+.create {
+    font-size: 16px;
+}
+
+.link {
+    text-decoration:underline;
+}
+
+.logo-um {
+    display: none;
+    padding: 20px 100px;
+}
+
+label {
+    display: none;
+}
+
+@media (max-width: 1033px) {
+    .logo-um {
+        display: block;
+    }
+
+    .header-content{
+        display: none;
+    }
+
+    label {
+        display: block;
+        z-index: 5;
+    }
+
+    label .close-btn {
+        display: none;
+    }
+
+    #check:checked ~ .header-content {
+        z-index: 4;
+        position:fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        background-color: rgb(0, 0, 26);
+        top: 0;
+        bottom: 0;
+        overflow: none;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    li {
+        margin-top: 20px;
+    }
+    .media-icons {
+        position: static;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section-content {
+        margin-top: 135px;
+    }
+}
+
+@media (max-width: 759px) {
+    .section-content {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 0px 40px;
+    }
+
+    .logo-um {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    aside {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+}
+
+
