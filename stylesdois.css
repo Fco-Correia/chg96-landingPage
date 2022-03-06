@@ -15,7 +15,10 @@ body {
 }
 
 label {
-    font-size: 30px;
+    position: absolute;
+    right: 100px;
+    top: 28px;
+    font-size: 25px;
 }
 #check {
     display: none;
@@ -186,14 +189,9 @@ label {
 
 @media (max-width: 1033px) {
     .logo-um {
-        display: block
+        display: block;
     }
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-right: 75px;
-    }
+
     .header-content{
         display: none;
     }
@@ -245,13 +243,6 @@ label {
         padding: 0px 40px;
     }
 
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-right: 35px;
-    }
-
     .logo-um {
         padding-left: 40px;
         padding-right: 40px;
@@ -265,6 +256,14 @@ label {
         width: 100%;
     }
 
+    label {
+        position: absolute;
+        right: 40px;
+        top: 28px;
+    }
+
 }
+
+
 
 
