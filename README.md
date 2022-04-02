@@ -1,2 +1,2 @@
-# TESTE2
-https://chg96-cpu.github.io/TESTE2/
+# chg96-landingPage
+https://chg96-cpu.github.io/landingPage/
